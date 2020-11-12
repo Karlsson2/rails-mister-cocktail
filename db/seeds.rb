@@ -12,7 +12,14 @@ Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 Ingredient.create(name: "Strawberry")
 Ingredient.create(name: "Raspberry")
-Ingredient.create(name: "Vodka")
+
 Ingredient.create(name: "Rum")
 Ingredient.create(name: "Bacardi")
 Ingredient.create(name: "Whiskey")
+
+Ingredient.create(name: "Vodka")
+@psm2 = Cocktail.create(name: "Pornstar Martini")
+@vodka2 = Ingredient.create(name: "Vodka2")
+
+Dose.create( description: "2 cl", ingredient_id: @vodka2.id, cocktail_id: @psm2.id)
+
