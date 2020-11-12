@@ -3,8 +3,11 @@
 
 <% @cocktails.each do |cocktail| %>
 <%=link_to cocktail_path(cocktail.id) do%>
-<%=cocktail.name %>
+<p><%=cocktail.name %></p>
 <% end %>
 
 <% end %>
+
+<%= link_to "Add new Cocktail", new_cocktail_path(), class: "btn btn-primary" %>
+
 

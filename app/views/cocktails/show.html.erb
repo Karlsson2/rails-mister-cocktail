@@ -3,5 +3,5 @@
 <p><%= dose.description%> of <%= dose.ingredient.name %></p>
 
 <% end %>
-<%= link_to "Add ingredient", cocktails_path(), class: "btn btn-primary" %>
+<%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
 <%= link_to "back", cocktails_path(), class: "btn btn-primary" %>
