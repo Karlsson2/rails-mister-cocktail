@@ -12,6 +12,15 @@
   </head>
 
   <body>
+  <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+
+    <i class="fas fa-cocktail"></i> Le Cocktails
+  </a>
+   <form class="form-inline">
+    <%= link_to "Add new Cocktail", new_cocktail_path(), class: "btn btn-primary", type: "button" %>
+  </form>
+</nav>
     <%= yield %>
   </body>
 </html>
