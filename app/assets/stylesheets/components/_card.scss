@@ -1,4 +1,5 @@
 .card-category {
+  position:relative;
   background-size: cover;
   background-position: center;
   height: 360px;
@@ -17,9 +18,9 @@
   .bin-button{
 
     font-size:36px;
-    position:absolute;
+    position: absolute;
     top: 3px;
-    right: 15px;
+    right: 10px;
 
   }
 }

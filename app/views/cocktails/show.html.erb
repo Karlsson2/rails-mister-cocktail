@@ -1,4 +1,4 @@
-<div class="image-card" style="background-image: url(https://img2.goodfon.com/wallpaper/nbig/6/1d/tropical-drink-fresh-fruit-990.jpg)">
+<div class="image-card" style="background-image: url(<%= cl_image_path @cocktail.photo.key, crop: :fill %>)">
   <%= link_to cocktails_path(), class: "arrow" do %>
   <i class="fas fa-arrow-left gradient"></i>
   <% end %>
@@ -17,11 +17,15 @@
       </li>
       <% end %>
     </ul>
-
-  <%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
-  <div class="cards-show-ingredients">
-    <%= cl_image_tag("ylahjbyrre4tfa3xut8v",
-    width: 400, height: 300, crop: :fill) %>
   </div>
-</div>
+  <div class="card-show-ingredients">
+      <h1>Add your Ingredient:</h1>
+
+      <%= simple_form_for [@cocktail,@dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.button :submit, "New Ingredient", class: "btn btn-primary"%>
+      <% end %>
+
+  </div>
 </div>
