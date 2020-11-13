@@ -2,11 +2,11 @@
 
   <% @cocktails.each do |cocktail| %>
 
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://img2.goodfon.com/wallpaper/nbig/6/1d/tropical-drink-fresh-fruit-990.jpg)">
       <%=link_to cocktail_path(cocktail.id) do%>
         <%=cocktail.name %>
-        <%= link_to cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?"} do%>
-          <i class="far fa-trash-alt"></i>
+        <%= link_to cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?"}, class: "bin-button" do%>
+          <i class="far fa-trash-alt "></i>
         <% end %>
 
       <% end %>

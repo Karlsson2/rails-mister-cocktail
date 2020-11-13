@@ -12,6 +12,17 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
+.card-category{
+  .bin-button{
+
+    font-size:36px;
+    position:absolute;
+    top: 3px;
+    right: 15px;
+
+  }
+}
 .cards {
   position:relative;
   margin: 20px 0;
@@ -26,4 +37,48 @@
     font-size: 32px
   }
 }
+
+.image-card {
+  position:relative;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.image-card{
+  .arrow {
+    font-size:36px;
+    position:absolute;
+    top: 3px;
+    left: 15px;
+  }
+}
+
+.cards-show {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card-show-ingredients{
+  background: #F9F9F9;
+   border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+.card-show-ingredients{
+  .list-group{
+    margin-bottom: 10px;
+  }
+}
+
+
 
