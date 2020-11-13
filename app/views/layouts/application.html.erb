@@ -12,15 +12,30 @@
   </head>
 
   <body>
-  <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+      <i class="fas fa-cocktail"></i> Le Cocktails
+      </a>
+       <form class="form-inline">
+        <%= link_to "Add new Cocktail", new_cocktail_path(), class: "btn btn-primary", type: "button" %>
+      </form>
+    </nav>
 
-    <i class="fas fa-cocktail"></i> Le Cocktails
-  </a>
-   <form class="form-inline">
-    <%= link_to "Add new Cocktail", new_cocktail_path(), class: "btn btn-primary", type: "button" %>
-  </form>
-</nav>
+    <div class="container">
     <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    <div class="footer-copyright">
+    This footer was made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>
   </body>
 </html>
